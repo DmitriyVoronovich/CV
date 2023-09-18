@@ -8,12 +8,12 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper direction={'column'}>
                 <StyledText>
-                    <span>Dmitriy Voronovich</span>
+                    <span>Dmitriy <br/>Voronovich</span>
                     <div>
                         <h1>Front-end Developer</h1>
                         <span>25 years old, Grodno</span>
                     </div>
-                    <span>ENG</span>
+                    <Language>ENG</Language>
                 </StyledText>
                 <Photo src={photo} alt='developer foto'/>
             </FlexWrapper>
@@ -37,4 +37,9 @@ const Photo = styled.img`
   width: 943.612px;
   height: 387px;
   object-fit: cover;
+  margin-bottom: 12vh;
+`
+
+const Language = styled.span`
+transform: rotate(270deg);
 `
