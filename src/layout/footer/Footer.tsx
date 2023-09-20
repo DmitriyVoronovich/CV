@@ -1,37 +1,43 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon";
+import {Container} from "../../components/Container";
+import {Theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <SocialList>
-                <SocialItem>
-                    <SocialLink href={''}>
-                        <Icon iconId={'instagram'} viewBox={'0 0 40 40'} height={'40px'} width={'40px'}/>
-                    </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                    <SocialLink href={''}>
-                        <Icon iconId={'gitHub'} viewBox={'0 0 88 88'} height={'40px'} width={'40px'}/>
-                    </SocialLink>
-                </SocialItem>
-                <SocialItem>
-                    <SocialLink href={''}>
-                        <Icon iconId={'linkedIn'} viewBox={'0 0 42 42'} height={'40px'} width={'40px'}/>
-                    </SocialLink>
-                </SocialItem>
-            </SocialList>
-            <Copyright> © 2023 Dmitriy Voronovich<br/> All Rights Reserved.</Copyright>
+            <Container>
+                <SocialList>
+                    <SocialItem>
+                        <SocialLink href={''}>
+                            <Icon iconId={'instagram'} viewBox={'0 0 40 40'} height={'40px'} width={'40px'}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink href={''}>
+                            <Icon iconId={'gitHub'} viewBox={'0 0 88 88'} height={'40px'} width={'40px'}/>
+                        </SocialLink>
+                    </SocialItem>
+                    <SocialItem>
+                        <SocialLink href={''}>
+                            <Icon iconId={'linkedIn'} viewBox={'0 0 42 42'} height={'40px'} width={'40px'}/>
+                        </SocialLink>
+                    </SocialItem>
+                </SocialList>
+                <Copyright> © 2023 Dmitriy Voronovich<br/> All Rights Reserved.</Copyright>
+            </Container>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-  display: flex;
-  margin: 8vh auto 0 auto;
-  justify-content: center;
-  flex-direction: column;
+    ${Container} {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 10vh;
+    }
 `
 
 const SocialItem = styled.li`
@@ -53,4 +59,9 @@ const Copyright = styled.small`
 text-align: center;
   margin-top: 2vh;
   margin-bottom: 5vh;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: ${Theme.colors.secondaryFont};
 `

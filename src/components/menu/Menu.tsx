@@ -10,10 +10,12 @@ export const Menu = (props: menuPropsType) => {
     return (
         <StyledMenu>
             <ul>
-                {props.menuItems.map((item, index)  => {
-                    return (<li key={index}>
-                        <a href="">{item}</a>
-                    </li>)
+                {props.menuItems.map((item, index) => {
+                    return (<ListItem key={index}>
+                        <Link href="">
+                            {item}
+                        </Link>
+                    </ListItem>)
                 })}
             </ul>
         </StyledMenu>
@@ -21,23 +23,37 @@ export const Menu = (props: menuPropsType) => {
 };
 
 const StyledMenu = styled.nav`
-  padding: 32px 0;
-  border-bottom: 1px solid ${Theme.colors.secondaryFont};
+  padding: 4vh 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 11.5vh;
+    content: '';
+    width: 100%;
+    display: inline-block;
+    border: 1px solid ${Theme.colors.secondaryFont};;
+  }
   
   ul {
     display: flex;
     justify-content: space-between;
+  }
+`
 
-    li {
+const ListItem = styled.li`
+    position: relative;
+`
 
-      a {
-        color: ${Theme.colors.secondaryFont};
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
-      
-    }
+const Link = styled.a`
+  color: ${Theme.colors.secondaryFont};
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  &:hover {
+    color: ${Theme.colors.primaryFont};
+    font-weight: bold;
   }
 `

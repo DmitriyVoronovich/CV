@@ -1,28 +1,40 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
+import {Container} from "../../../components/Container";
 
 export const AboutMe = () => {
     return (
         <StyledAboutMe>
-            <SectionTitle>About me</SectionTitle>
-            <Text>Hi, I'm Denis – UX/UI designer from Minsk.<br/> I'm interested in design and everything connected with it.</Text>
-            <Text>I'm studying at courses "Web and mobile design <br/> interfaces" in IT-Academy.</Text>
-            <Text>Ready to implement excellent projects<br/> with wonderful people.</Text>
+            <Container>
+                <InformationContainer>
+                    <SectionTitle>About me</SectionTitle>
+                    <Text>Hi, I'm Dmitriy – Front-end developer from Grodno.<br/> I'm interested in Front-end development and everything
+                        connected with it.</Text>
+                    <Text>I'm studying at courses "Front-end" in <br/>IT-Incubator.</Text>
+                    <Text>Ready to implement excellent projects<br/> with wonderful people.</Text>
+                </InformationContainer>
+            </Container>
         </StyledAboutMe>
     );
 };
 
 const StyledAboutMe = styled.section`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 100%;
-  background: #F6F6F6;
-  min-height: 50vh;
+`
+const InformationContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 50vh;
+    padding-top: 14vh;
+  padding-bottom: 13vh;
+  gap: 6vh
 `
 
 const Text = styled.p`
-text-align: center;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `
