@@ -13,7 +13,7 @@ export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
             <ImgWrapper>
-                <Image src={props.src}/>
+                <Image src={props.src} alt={'Project home page'}/>
                 <Text>{props.text}</Text>
             </ImgWrapper>
             <Link href={''}>{props.title}</Link>
