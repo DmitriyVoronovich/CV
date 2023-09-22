@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container";
 
 export const Works = () => {
     return (
-        <StyledWorks>
+        <StyledWorks id={'Project'}>
             <Container>
                 <SectionTitle>Project</SectionTitle>
                 <FlexWrapper direction={'column'}>

@@ -7,7 +7,7 @@ import {Theme} from "../../../styles/Theme";
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id={'Home'}>
             <Container>
                 <FlexWrapper direction={'column'}>
                     <StyledText>

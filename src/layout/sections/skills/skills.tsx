@@ -7,7 +7,7 @@ import {Container} from "../../../components/Container";
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={'Skills'}>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <Text>I have experience with the following technologies:</Text>

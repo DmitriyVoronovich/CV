@@ -12,7 +12,7 @@ export const Menu = (props: menuPropsType) => {
             <ul>
                 {props.menuItems.map((item, index) => {
                     return (<ListItem key={index}>
-                        <Link href="">
+                        <Link href={`#${item}`}>
                             {item}
                         </Link>
                     </ListItem>)

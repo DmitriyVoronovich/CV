@@ -6,7 +6,7 @@ import {Theme} from "../../../styles/Theme";
 
 export const Contacts = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={'Contacts'}>
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <Text>Want to know more or just chat? <br/>

@@ -5,7 +5,7 @@ import {Container} from "../../../components/Container";
 
 export const AboutMe = () => {
     return (
-        <StyledAboutMe>
+        <StyledAboutMe id={'About me'}>
             <Container>
                 <InformationContainer>
                     <SectionTitle>About me</SectionTitle>
