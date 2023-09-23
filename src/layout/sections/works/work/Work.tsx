@@ -34,7 +34,7 @@ const Link = styled.a`
   color: ${Theme.colors.primaryFont};
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -46,7 +46,7 @@ const Text = styled.p`
   width: 60%;
   margin: 0 auto 8vh;
   text-align: center;
-  font-size: 18px;
+  font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -30,6 +30,7 @@ export const Main = () => {
 const StyledText = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: end;
   padding: 15vh 0 3.5vh 0;
 `
 
@@ -49,7 +50,7 @@ const Photo = styled.img`
 const Language = styled.span`
 transform: rotate(270deg);
   height: 0.5vh;
-  margin-top: 8vh;
+  margin: 8vh 0;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
@@ -58,18 +59,18 @@ transform: rotate(270deg);
 
 const StyledName = styled.h2`
   color: ${Theme.colors.primaryFont};
-  font-size: 47.339px;
+  font-size: calc((100vw - 360px) / (1445 - 360) * (47 - 24) + 24px);
   font-style: normal;
   font-weight: bold;
   line-height: normal;
 `
 
 const TextContainer = styled.div`
-  padding-top: 9.6vh;
+  margin-bottom: 0.5vh;
   
   h1 {
     color: ${Theme.colors.primaryFont};
-    font-size: 18px;
+    font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -77,7 +78,7 @@ const TextContainer = styled.div`
   
   span {
     color: ${Theme.colors.primaryFont};
-    font-size: 18px;
+    font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
     font-style: normal;
     font-weight: 400;
     line-height: normal; 

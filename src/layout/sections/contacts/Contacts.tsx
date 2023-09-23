@@ -35,7 +35,7 @@ const StyledContacts = styled.section`
 const Text = styled.p`
   max-width: 40%;
   text-align: center;
-  font-size: 18px;
+  font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
