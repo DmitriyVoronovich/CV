@@ -37,7 +37,6 @@ const StyledText = styled.div`
 const StyledMain = styled.div`
   display: flex;
   justify-content: center;
-
 `
 
 const Photo = styled.img`

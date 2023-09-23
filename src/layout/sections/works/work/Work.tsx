@@ -27,7 +27,9 @@ const StyledWork = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 64vh;
+  max-height: 64vh;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 `
 
 const Link = styled.a`
@@ -46,7 +48,7 @@ const Text = styled.p`
   width: 60%;
   margin: 0 auto 8vh;
   text-align: center;
-  font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
+  font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 14) + 14px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

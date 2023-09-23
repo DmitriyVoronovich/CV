@@ -18,11 +18,12 @@ export const Skill = (props:SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-margin-bottom: 10vh;
-  
+margin-bottom: 8vh;
 `
 
 const SkillTitle = styled.h3`
+  max-width: 120px;
+  max-height: 147px;
   color: #828282;
   text-align: center;
   font-size: 14px;

@@ -28,7 +28,8 @@ export const Works = () => {
 const StyledWorks = styled.section`
     ${Container} {
       ${SectionTitle} {
-        padding: 11vh 0 6vh 0;
+        margin-bottom: 6vh;
+        padding-top: 11vh;
       }
     }
 `
