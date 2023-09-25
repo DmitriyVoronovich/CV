@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/CV/static/css/main.31d6cfe0.css",
-    "main.js": "/CV/static/js/main.30269e0a.js",
+    "main.js": "/CV/static/js/main.d27d17f5.js",
     "static/js/787.25eaef86.chunk.js": "/CV/static/js/787.25eaef86.chunk.js",
     "static/media/icon-sprite.svg": "/CV/static/media/icon-sprite.d8458605df6948b7a19fb920557ce812.svg",
     "static/media/netflix.png": "/CV/static/media/netflix.68eb7d4e6b8288e78323.png",
     "static/media/heder.webp": "/CV/static/media/heder.8813b4d6177ccb0e9b08.webp",
     "static/media/Marvel.png": "/CV/static/media/Marvel.c3b52c6f1772327d766c.png",
     "index.html": "/CV/index.html",
-    "main.30269e0a.js.map": "/CV/static/js/main.30269e0a.js.map",
+    "main.d27d17f5.js.map": "/CV/static/js/main.d27d17f5.js.map",
     "787.25eaef86.chunk.js.map": "/CV/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.30269e0a.js"
+    "static/js/main.d27d17f5.js"
   ]
 }
