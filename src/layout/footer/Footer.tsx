@@ -37,6 +37,10 @@ const StyledFooter = styled.footer`
       justify-content: center;
       flex-direction: column;
       padding-top: 10vh;
+
+      @media ${Theme.media.tablet} {
+        padding-top: 7vh;
+      }
     }
 `
 

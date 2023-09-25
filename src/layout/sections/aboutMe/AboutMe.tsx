@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
+import {Theme} from "../../../styles/Theme";
 
 export const AboutMe = () => {
     return (
@@ -28,7 +29,13 @@ const InformationContainer = styled.div`
   min-height: 50vh;
   padding-top: 14vh;
   padding-bottom: 13vh;
-  gap: 6vh
+  gap: 6vh;
+
+  @media ${Theme.media.tablet} {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    gap: 6vh;
+  }
 `
 
 const Text = styled.p`

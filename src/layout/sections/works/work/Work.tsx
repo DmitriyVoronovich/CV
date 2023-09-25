@@ -42,6 +42,10 @@ const Link = styled.a`
   line-height: normal;
   text-decoration-line: underline;
   margin: 6vh 0 12vh 0;
+
+  @media ${Theme.media.tablet} {
+    margin: 3vh 0 6vh 0;
+  }
 `
 const Text = styled.p`
   color: ${Theme.colors.secondaryBg};

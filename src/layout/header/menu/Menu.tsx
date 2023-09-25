@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Theme} from "../../styles/Theme";
+import {Theme} from "../../../styles/Theme";
 
 type menuPropsType = {
     menuItems: Array<string>
@@ -32,12 +32,16 @@ const StyledMenu = styled.nav`
     content: '';
     width: 100%;
     display: inline-block;
-    border: 1px solid ${Theme.colors.secondaryFont};;
+    border: 1px solid ${Theme.colors.secondaryFont};
   }
-  
+
   ul {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media ${Theme.media.tablet} {
+    display: none;
   }
 `
 

@@ -29,6 +29,10 @@ const StyledContacts = styled.section`
     flex-direction: column;
     align-items: center;
     padding-top: 12vh;
+
+    @media ${Theme.media.tablet} {
+      padding-top: 7vh;
+    }
   }
 `
 
@@ -40,13 +44,30 @@ const Text = styled.p`
   font-weight: 400;
   line-height: normal;
   margin: 2.5vh 0 3.6vh;
+
+  @media ${Theme.media.tablet} {
+    max-width: 80%;
+  }
+
+  @media ${Theme.media.tablet} {
+    max-width: 90%;
+  }
 `
 
 const StyledForm = styled.form`
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media ${Theme.media.tablet} {
+    width: 70%;
+  }
+
+  @media ${Theme.media.mobile} {
+    width: 90%;
+  }
+  
   ${Button} {
     margin: 0 auto;
   }

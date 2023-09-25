@@ -5,5 +5,10 @@ export const Theme = {
 
         primaryBg: '#F6F6F6',
         secondaryBg: '#FFF'
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)',
     }
 }

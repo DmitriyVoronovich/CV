@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "../../../components/skill/skill";
 import {Container} from "../../../components/Container";
+import {Theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
@@ -27,10 +28,21 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  min-height: 100vh;
-  
+  min-height: 90vh;
+  flex-grow: 1;
+
   ${Container} {
     padding-top: 11.5vh;
+
+    @media ${Theme.media.tablet} {
+      padding-top: 7vh;
+      gap: 6vh;
+    }
+
+    @media ${Theme.media.tablet} {
+      padding-top: 7vh;
+      gap: 6vh;
+    }
   }
 `
 
@@ -41,4 +53,8 @@ const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media ${Theme.media.tablet} {
+    margin: 6vh 0 5vh 0;
+  }
 `

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme";
 
 type SkillPropsType = {
     viewBox?:string
@@ -19,6 +20,10 @@ export const Skill = (props:SkillPropsType) => {
 
 const StyledSkill = styled.div`
 margin-bottom: 8vh;
+
+  @media ${Theme.media.tablet} {
+    margin-bottom: 5vh;
+  }
 `
 
 const SkillTitle = styled.h3`
