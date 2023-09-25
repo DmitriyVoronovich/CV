@@ -112,7 +112,7 @@ const DesktopMenu = styled.nav`
 
   &::after {
     position: absolute;
-    top: 11.5vh;
+    top: 11.3vh;
     content: '';
     width: 100%;
     display: inline-block;
