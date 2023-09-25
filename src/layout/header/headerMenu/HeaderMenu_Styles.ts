@@ -1,42 +1,28 @@
-import React from 'react';
 import styled, {css} from "styled-components";
 import {Theme} from "../../../styles/Theme";
 
-type menuPropsType = {
-    menuItems: Array<string>
-}
+const MenuItem = styled.li`
+    position: relative;
+`
 
-export const MobileMenu = (props: menuPropsType) => {
-    return (
-        <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
-                <span></span>
-            </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
-                <ul>
-                    {props.menuItems.map((item, index) => {
-                        return (<ListItem key={index}>
-                            <Link href={`#${item}`}>
-                                {item}
-                            </Link>
-                        </ListItem>)
-                    })}
-                </ul>
-            </MobileMenuPopup>
-        </StyledMobileMenu>
-    );
-};
+const Link = styled.a`
+  color: ${Theme.colors.secondaryFont};
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  &:hover {
+    color: ${Theme.colors.primaryFont};
+    font-weight: bold;
+  }
+`
 
-const StyledMobileMenu = styled.nav`
+// MobileMenu
+
+const MobileMenu = styled.nav`
   padding: 4vh 0;
   position: relative;
-  display: none;
-  
-
-
-  @media ${Theme.media.tablet} {
-    display: block;
-  }
 `
 
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
@@ -118,19 +104,32 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
   }
 `
 
-const ListItem = styled.li`
+// DesktopMenu
+
+const DesktopMenu = styled.nav`
+  padding: 4vh 0;
   position: relative;
-`
 
-const Link = styled.a`
-  color: ${Theme.colors.secondaryFont};
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  &::after {
+    position: absolute;
+    top: 11.5vh;
+    content: '';
+    width: 100%;
+    display: inline-block;
+    border: 1px solid ${Theme.colors.secondaryFont};
+  }
 
-  &:hover {
-    color: ${Theme.colors.primaryFont};
-    font-weight: bold;
+  ul {
+    display: flex;
+    justify-content: space-between;
   }
 `
+
+export const S = {
+    Link,
+    MenuItem,
+    BurgerButton,
+    MobileMenuPopup,
+    MobileMenu,
+    DesktopMenu
+}
