@@ -20,7 +20,7 @@ const Text = styled.div`
 const Wrapper = styled.div`
   display: flex;
   justify-content: start;
-  gap: 9vw;
+  gap: 8vw;
   align-items: end;
 
   @media ${Theme.media.tablet} {
