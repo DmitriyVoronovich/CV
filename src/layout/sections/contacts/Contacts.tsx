@@ -6,7 +6,7 @@ import React from "react";
 
 export const Contacts: React.FC = () => {
     return (
-        <S.Contacts id={'Contacts'}>
+        <S.Contacts id={'contacts'}>
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <S.Text>Want to know more or just chat? <br/>

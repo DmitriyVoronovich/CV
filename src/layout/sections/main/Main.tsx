@@ -6,7 +6,7 @@ import {S} from './Main_Styles'
 
 export const Main: React.FC = () => {
     return (
-        <S.Main id={'Home'}>
+        <S.Main id={'home'}>
             <Container>
                 <FlexWrapper direction={'column'}>
                     <S.Text>

@@ -1,18 +1,20 @@
 import styled, {css} from "styled-components";
 import {Theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 const MenuItem = styled.li`
     position: relative;
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${Theme.colors.secondaryFont};
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
   
-  &:hover {
+  &:hover, &.active {
     color: ${Theme.colors.primaryFont};
     font-weight: bold;
   }
@@ -34,13 +36,11 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
   bottom: 0;
   left: 0;
   z-index: 99999;
-  display: none;
-  
-  ${props => props.isOpen && css<{isOpen: boolean}> `
   display: flex;
-    justify-content: center;
-    align-items: center;
-  `}
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 0.8s ease-in-out;
   
   ul {
     display: flex;
@@ -49,13 +49,18 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     flex-direction: column;
     align-items: center;
   }
+
+  ${props => props.isOpen && css<{isOpen: boolean}> `
+    transform: translateY(0);
+    
+  `}
 `
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
   position: fixed;
   width: 200px;
   height: 200px;
-  top: -100px;
+  top: -110px;
   right: -100px;
   z-index: 9999999;
 
@@ -84,6 +89,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         width: 36px;
         transform: rotate(-45deg) translateY(0);
+        left: 0;
       `}
     }
 
@@ -126,7 +132,7 @@ const DesktopMenu = styled.nav`
 `
 
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     BurgerButton,
     MobileMenuPopup,

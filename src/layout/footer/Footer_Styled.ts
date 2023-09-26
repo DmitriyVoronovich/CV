@@ -7,7 +7,7 @@ const Footer = styled.footer`
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding-top: 10vh;
+      padding-top: 14vh;
 
       @media ${Theme.media.tablet} {
         padding-top: 7vh;

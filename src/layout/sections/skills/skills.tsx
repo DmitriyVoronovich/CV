@@ -3,7 +3,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "../../../components/skill/skill";
 import {Container} from "../../../components/Container";
-import {S} from './Skills_Styles'
+import {Fade} from "react-awesome-reveal";
+import {S} from './Skills_Styles';
 
 const skillsData = [
     {
@@ -50,16 +51,18 @@ const skillsData = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills id={'Skills'}>
+        <S.Skills id={'skills'}>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <S.Text>I have experience with the following technologies:</S.Text>
                 <FlexWrapper wrap={'wrap'} gap={'16%'} align={'center'} justify={'space-around'}>
+                    <Fade cascade={true} damping={0.3}>
                     {skillsData.map((item, index) => {
                         return (
                             <Skill key={index} iconId={item.iconId} title={item.title} viewBox={item.viewBox}/>
                         )
                     })}
+                    </Fade>
                 </FlexWrapper>
             </Container>
         </S.Skills>

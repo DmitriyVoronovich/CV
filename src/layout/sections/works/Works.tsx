@@ -3,6 +3,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import netflix from '../../../assets/images/netflix.png'
+import social from '../../../assets/images/Rectangle14.png'
 import marvel from '../../../assets/images/Marvel.png'
 import {Container} from "../../../components/Container";
 import {S} from './Works_Styled'
@@ -22,7 +23,7 @@ const worksData = [
     },
     {
         title: 'Social Network',
-        src: netflix,
+        src: social,
         href: 'https://github.com/DmitriyVoronovich/Social-network',
         text: `A copy of the social network. Technology stack: React, Redux...`
     }
@@ -30,7 +31,7 @@ const worksData = [
 
 export const Works: React.FC = () => {
     return (
-        <S.Works id={'Project'}>
+        <S.Works id={'project'}>
             <Container>
                 <SectionTitle>Project</SectionTitle>
                 <FlexWrapper direction={'column'}>

@@ -24,7 +24,7 @@ const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 2.5vh 0 3.6vh;
+  margin: 3vh 0 4vh;
 
   @media ${Theme.media.tablet} {
     max-width: 80%;
@@ -39,7 +39,7 @@ const Form = styled.form`
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 
   @media ${Theme.media.tablet} {
     width: 70%;
@@ -50,7 +50,7 @@ const Form = styled.form`
   }
   
   ${Button} {
-    margin: 0 auto;
+    margin: 4vh auto;
   }
   
   textarea {

@@ -8,7 +8,7 @@ const InformationContainer = styled.div`
   justify-content: space-between;
   flex-direction: column;
   min-height: 50vh;
-  padding-top: 14vh;
+  padding-top: 12vh;
   padding-bottom: 13vh;
   gap: 6vh;
 

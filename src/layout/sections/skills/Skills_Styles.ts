@@ -7,7 +7,7 @@ const Skills = styled.section`
   flex-grow: 1;
 
   ${Container} {
-    padding-top: 11.5vh;
+    padding-top: 12vh;
 
     @media ${Theme.media.tablet} {
       padding-top: 7vh;

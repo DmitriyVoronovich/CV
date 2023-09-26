@@ -7,7 +7,7 @@ const Works = styled.section`
     ${Container} {
       ${SectionTitle} {
         margin-bottom: 6vh;
-        padding-top: 11vh;
+        padding-top: 12vh;
 
         @media ${Theme.media.tablet} {
           padding-top: 7vh;
@@ -26,7 +26,6 @@ const Work = styled.div`
 const Image = styled.img`
   width: 100%;
   max-height: 64vh;
-  object-fit: cover;
   aspect-ratio: 16 / 9;
 `
 
@@ -59,29 +58,37 @@ const Text = styled.p`
 const ImgWrapper = styled.div`
   position: relative;
 
-  &:hover {
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-    }
-    ${Text} {
-      opacity: 1;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: 0.8s ease-in-out;
   }
   
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+
+    ${Text} {
+      opacity: 1;
+      transition: 0.8s ease-in-out;
+    }
+  }
   ${Text} {
+    transition: 0.8s ease-in-out;
     opacity: 0;
-  position: absolute;
-  left: 50%;
+    position: absolute;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) ;
-}
+    transform: translate(-50%, -50%);
+  }
 `
 
 export const S = {
