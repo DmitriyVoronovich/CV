@@ -38,6 +38,8 @@ const StyledGoTopBtn = styled.button`
   position: fixed;
   bottom: 30px;
   right: 30px;
+  cursor: pointer;
+  
   @media ${Theme.media.tablet} {
     bottom: 20px;
     right: 20px;

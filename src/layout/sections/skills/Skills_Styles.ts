@@ -38,9 +38,21 @@ const Text = styled.p`
 
 const Skill = styled.div`
 margin-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media ${Theme.media.tablet} {
     margin-bottom: 5vh;
+  }
+
+  @media ${Theme.media.mobile} {
+    
+    svg {
+      width: 90px;
+      height: 90px;
+    }
   }
 `
 
@@ -53,11 +65,28 @@ const Title = styled.h3`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 10px 0 31px;
+
+  @media ${Theme.media.tablet} {
+    margin: 5px 0 15px;
+  }
+`
+
+const StarWrapper = styled.div`
+  display: flex;
+  gap: 9px;
+  @media ${Theme.media.tablet} {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 `
 
 export const S = {
     Skills,
     Text,
     Skill,
-    Title
+    Title,
+    StarWrapper
 }

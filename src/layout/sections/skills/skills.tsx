@@ -10,42 +10,50 @@ const skillsData = [
     {
         iconId: 'html',
         title: 'HTML5',
-        viewBox: ''
+        viewBox: '',
+        level: ['true', 'true', 'true', 'true', 'true']
     },
     {
         iconId: 'react',
         title: 'React',
-        viewBox: ''
+        viewBox: '',
+        level: ['true', 'true', 'true', 'true', 'false']
     },
     {
         iconId: 'redux',
         title: 'Redux',
-        viewBox: '0 0 105 105'
+        viewBox: '0 0 105 105',
+        level: ['true', 'true', 'true', 'false', 'false']
     },
     {
         iconId: 'css',
         title: 'CSS',
-        viewBox: '0 0 115 115'
+        viewBox: '0 0 115 115',
+        level: ['true', 'true', 'true', 'true', 'false']
     },
     {
         iconId: 'git',
         title: 'Version control',
-        viewBox: '0 0 105 105'
+        viewBox: '0 0 105 105',
+        level: ['true', 'true', 'true', 'false', 'false']
     },
     {
         iconId: 'javascript',
         title: 'JavaScript',
-        viewBox: ''
+        viewBox: '',
+        level: ['true', 'true', 'true', 'true', 'false']
     },
     {
         iconId: 'gitHub',
         title: 'GitHub',
-        viewBox: '0 0 90 90'
+        viewBox: '0 0 90 90',
+        level: ['true', 'true', 'true', 'true', 'false']
     },
     {
         iconId: 'sass',
         title: 'Sass',
-        viewBox: ''
+        viewBox: '',
+        level: ['true', 'true', 'true', 'true', 'false']
     }
 ]
 
@@ -59,7 +67,7 @@ export const Skills: React.FC = () => {
                     <Fade cascade={true} damping={0.3}>
                     {skillsData.map((item, index) => {
                         return (
-                            <Skill key={index} iconId={item.iconId} title={item.title} viewBox={item.viewBox}/>
+                            <Skill key={index} iconId={item.iconId} title={item.title} viewBox={item.viewBox} level={item.level}/>
                         )
                     })}
                     </Fade>
