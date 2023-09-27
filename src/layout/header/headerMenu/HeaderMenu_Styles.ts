@@ -113,12 +113,12 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 // DesktopMenu
 
 const DesktopMenu = styled.nav`
-  padding: 4vh 0;
+  padding: 3vh 0;
   position: relative;
 
   &::after {
     position: absolute;
-    top: 11.3vh;
+    top: 100%;
     content: '';
     width: 100%;
     display: inline-block;

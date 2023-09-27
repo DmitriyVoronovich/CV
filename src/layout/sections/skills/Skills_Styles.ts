@@ -10,12 +10,7 @@ const Skills = styled.section`
     padding-top: 12vh;
 
     @media ${Theme.media.tablet} {
-      padding-top: 7vh;
-      gap: 6vh;
-    }
-
-    @media ${Theme.media.tablet} {
-      padding-top: 7vh;
+      padding-top: 10vh;
       gap: 6vh;
     }
   }
@@ -37,7 +32,7 @@ const Text = styled.p`
 // Skill
 
 const Skill = styled.div`
-margin-bottom: 8vh;
+  margin-bottom: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +43,7 @@ margin-bottom: 8vh;
   }
 
   @media ${Theme.media.mobile} {
-    
+
     svg {
       width: 90px;
       height: 90px;

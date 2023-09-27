@@ -9,10 +9,10 @@ const Contacts = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 12vh;
+    padding-top: 14vh;
 
     @media ${Theme.media.tablet} {
-      padding-top: 7vh;
+      padding-top: 10vh;
     }
   }
 `
@@ -61,16 +61,16 @@ const Form = styled.form`
 
 const Field = styled.input`
   font-family: 'Poppins', serif;
-    width: 100%;
+  width: 100%;
   padding: 5px;
   border: 2px solid ${Theme.colors.primaryFont};
-  color:${Theme.colors.primaryFont};
-  
+  color: ${Theme.colors.primaryFont};
+
   &::placeholder {
     color: ${Theme.colors.secondaryFont};
     text-transform: capitalize;
   }
-  
+
   &:focus-visible {
     border: 3px solid ${Theme.colors.primaryFont};
   }

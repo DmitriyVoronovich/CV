@@ -80,7 +80,11 @@ const Name = styled.h2`
 `
 
 const TextContainer = styled.div`
-  margin-bottom: 2vh;
+  margin-bottom: 1.7vh;
+
+  @media ${Theme.media.tablet} {
+    margin-bottom: 0;
+  }
   
   h1 {
     color: ${Theme.colors.primaryFont};

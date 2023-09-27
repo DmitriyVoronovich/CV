@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Dispatch, SetStateAction} from 'react';
 import {S} from '../HeaderMenu_Styles'
 
 const menu = [
@@ -24,7 +24,11 @@ const menu = [
     },
 ]
 
-export const Menu: React.FC = () => {
+type MenuPropsType = {
+    onClick?: () => void
+}
+
+export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
 
     return (
         <ul>
@@ -34,7 +38,8 @@ export const Menu: React.FC = () => {
                                smooth={true}
                                activeClass="active"
                                spy={true}
-                               offset={10}>
+                               offset={10}
+                               onClick= {props.onClick}>
                         {item.title}
                     </S.NavLink>
                 </S.MenuItem>)

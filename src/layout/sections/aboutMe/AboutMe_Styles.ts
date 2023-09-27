@@ -13,7 +13,7 @@ const InformationContainer = styled.div`
   gap: 6vh;
 
   @media ${Theme.media.tablet} {
-    padding-top: 7vh;
+    padding-top: 10vh;
     padding-bottom: 7vh;
     gap: 6vh;
   }

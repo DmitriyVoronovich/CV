@@ -63,7 +63,7 @@ export const Skills: React.FC = () => {
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <S.Text>I have experience with the following technologies:</S.Text>
-                <FlexWrapper wrap={'wrap'} gap={'16%'} align={'center'} justify={'space-around'}>
+                <FlexWrapper wrap={'wrap'} gap={'5vh'} align={'center'} justify={'space-around'}>
                     <Fade cascade={true} damping={0.3}>
                     {skillsData.map((item, index) => {
                         return (
