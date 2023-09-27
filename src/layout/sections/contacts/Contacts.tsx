@@ -2,10 +2,15 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {Container} from "../../../components/Container";
 import {S} from './Contacts_Styled';
-import React, {ElementRef, useRef} from "react";
+import React, {ElementRef, useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 
-export const Contacts: React.FC = () => {
+type ContactsPropsType = {
+    openPopUp?: () => void
+}
+
+export const Contacts: React.FC<ContactsPropsType> = (props:ContactsPropsType) => {
+
     const form = useRef<ElementRef<'form'>>(null);
 
     const sendEmail = (e: any) => {
@@ -32,7 +37,7 @@ export const Contacts: React.FC = () => {
                     <S.Field required={true} placeholder={'email'} name="email" type={"email"}/>
                     <S.Field required={true} placeholder={'subject'} name="subject"/>
                     <S.Field required={true} as={'textarea'} placeholder={'message'} name="message"/>
-                    <Button type={'submit'}>Send message</Button>
+                    <Button type={'submit'} onClick={props.openPopUp}>Send message</Button>
                 </S.Form>
             </Container>
         </S.Contacts>
