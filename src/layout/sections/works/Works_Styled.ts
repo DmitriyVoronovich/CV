@@ -27,6 +27,7 @@ const Image = styled.img`
   width: 100%;
   max-height: 64vh;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
 `
 
 const Link = styled.a`
@@ -48,54 +49,12 @@ const Text = styled.p`
   top: 40%;
   color: ${Theme.colors.secondaryBg};
   width: 70%;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   text-align: center;
   font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 14) + 14px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 `
-
-// const ButtonWrapper = styled.div`
-//   position: absolute;
-//   bottom: 25%;
-//   left: 30%;
-//   gap: 1vw;
-//
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   & a {
-//     & button {
-//       transition: 0.8s ease-in-out;
-//       opacity: 0;
-//     }
-//   }
-//
-//   @media ${Theme.media.tablet} {
-//     bottom: 25%;
-//     left: 33%;
-//     & a {
-//       & button {
-//         width: 120px;
-//         height: 4vh;
-//       }
-//     }
-//   }
-//
-//   @media ${Theme.media.mobile2} {
-//     bottom: 20%;
-//     left: 30%;
-//   }
-//
-//   @media ${Theme.media.mobile} {
-//     right: 30%;
-//     bottom: 10%;
-//   }
-// `
 
 const ImgWrapper = styled.div`
   position: relative;
@@ -113,17 +72,16 @@ const ImgWrapper = styled.div`
     transition: 0.8s ease-in-out;
   }
 
+  @media ${Theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+  }
+  
   &:hover {
     &::before {
       opacity: 1;
     }
-
-    //& a {
-    //  & button {
-    //    transition: 0.8s ease-in-out;
-    //    opacity: 1;
-    //  }
-    //}
 
     ${Text} {
       opacity: 1;
@@ -138,6 +96,10 @@ const ImgWrapper = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @media ${Theme.media.tablet} {
+      opacity: 1;
+    }
   }
 `
 
@@ -148,5 +110,4 @@ export const S = {
     Link,
     ImgWrapper,
     Text
-    // ButtonWrapper
 }

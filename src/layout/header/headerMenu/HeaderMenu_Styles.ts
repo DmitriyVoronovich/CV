@@ -16,7 +16,7 @@ const NavLink = styled(Link)`
   
   &:hover, &.active {
     color: ${Theme.colors.primaryFont};
-    font-weight: bold;
+    text-shadow: 0 0 1px ${Theme.colors.primaryFont};
   }
 `
 

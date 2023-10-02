@@ -4,23 +4,29 @@ import {S} from '../HeaderMenu_Styles'
 const menu = [
     {
         title: 'Home',
-        href: 'home'
+        href: 'home',
+        offset: 10
     },
     {
         title: 'About me',
-        href: 'about'
+        href: 'about',
+        offset: 10
+
     },
     {
         title: 'Skills',
-        href: 'skills'
+        href: 'skills',
+        offset: 10
     },
     {
         title: 'Project',
-        href: 'project'
+        href: 'project',
+        offset: 10
     },
     {
         title: 'Contacts',
-        href: 'contacts'
+        href: 'contacts',
+        offset: 40
     },
 ]
 
@@ -38,7 +44,7 @@ export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
                                smooth={true}
                                activeClass="active"
                                spy={true}
-                               offset={10}
+                               offset={item.offset}
                                onClick= {props.onClick}>
                         {item.title}
                     </S.NavLink>
