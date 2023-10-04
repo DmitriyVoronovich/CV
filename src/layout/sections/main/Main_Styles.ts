@@ -61,17 +61,17 @@ const Photo = styled.img`
 const ButtonContainer = styled.div`
   transform: rotate(270deg);
   height: 0.5vh;
-  margin: 8vh 0;
+  margin: 8vh -23px;
   display: flex;
   gap: 16px;
   position: relative;
 
   @media ${Theme.media.tablet} {
-    margin: 10vh 0 5vh 0;
+    margin: 10vh -23px 5vh 0;
   }
 
   @media ${Theme.media.mobile} {
-    margin: 0 0 8vh 0;
+    margin: 0 -23px 8vh 0;
   }
   
   span {
