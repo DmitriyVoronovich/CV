@@ -5,6 +5,7 @@ import {Skill} from "../../../components/skill/skill";
 import {Container} from "../../../components/Container";
 import {Fade} from "react-awesome-reveal";
 import {S} from './Skills_Styles';
+import {useTranslation} from "react-i18next";
 
 const skillsData = [
     {
@@ -58,11 +59,14 @@ const skillsData = [
 ]
 
 export const Skills: React.FC = () => {
+
+    const { t } = useTranslation();
+
     return (
         <S.Skills id={'skills'}>
             <Container>
-                <SectionTitle>Skills</SectionTitle>
-                <S.Text>I have experience with the following technologies:</S.Text>
+                <SectionTitle>{t("skills")}</SectionTitle>
+                <S.Text>{t("skillsText")}</S.Text>
                 <FlexWrapper wrap={'wrap'} gap={'5vh'} align={'center'} justify={'space-around'}>
                     <Fade cascade={true} damping={0.3}>
                     {skillsData.map((item, index) => {

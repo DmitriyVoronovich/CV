@@ -7,40 +7,44 @@ import social from '../../../assets/images/Rectangle14.png'
 import marvel from '../../../assets/images/Marvel.png'
 import {Container} from "../../../components/Container";
 import {S} from './Works_Styled'
+import {useTranslation} from "react-i18next";
 
 const worksData = [
     {
-        title: 'Marvel information portal',
+        title: "projectTitle1",
         src: marvel,
         href: 'https://github.com/DmitriyVoronovich/Marvel-project',
         homePage: 'https://dmitriyvoronovich.github.io/Marvel-project/',
-        text: `The service allows you to get information about a character from the Marvel universe, as well as a list of comics with this character. Technology stack: React, Redux...`
+        text: "projectText1"
     },
     {
-        title: 'Netflix-clone',
+        title: "projectTitle2",
         src: netflix,
         href: 'https://github.com/DmitriyVoronovich/react-netflix',
         homePage: '',
-        text: `A copy of the hosting into which films from the API service are uploaded. The project has the ability to add and remove films. Technology stack: React, Redux...`
+        text: "projectText2"
     },
     {
-        title: 'Social Network',
+        title: "projectTitle3",
         src: social,
         href: 'https://github.com/DmitriyVoronovich/Social-network',
         homePage: 'https://github.com/DmitriyVoronovich/Social-network',
-        text: `A copy of the social network. Technology stack: React, Redux...`
+        text: "projectText3"
     }
 ]
 
 export const Works: React.FC = () => {
+
+    const { t } = useTranslation();
+
     return (
         <S.Works id={'project'}>
             <Container>
-                <SectionTitle>Project</SectionTitle>
+                <SectionTitle>{t("project")}</SectionTitle>
                 <FlexWrapper direction={'column'}>
                     {worksData.map((item, index) => {
                         return (
-                            <Work title={item.title} src={item.src} text={item.text} key={index} href={item.href}/>
+                            <Work title={t(item.title)} src={item.src} text={t(item.text)} key={index} href={item.href}/>
                         )
                     })}
                 </FlexWrapper>

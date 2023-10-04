@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme";
 
+type LanguagePropsType = {
+    activeEn?: boolean
+    activeRu?: boolean
+}
+
 const Text = styled.div`
   display: flex;
   justify-content: space-between;
@@ -53,14 +58,13 @@ const Photo = styled.img`
   }
 `
 
-const Language = styled.span`
-transform: rotate(270deg);
+const ButtonContainer = styled.div`
+  transform: rotate(270deg);
   height: 0.5vh;
   margin: 8vh 0;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
+  display: flex;
+  gap: 16px;
+  position: relative;
 
   @media ${Theme.media.tablet} {
     margin: 10vh 0 5vh 0;
@@ -69,6 +73,33 @@ transform: rotate(270deg);
   @media ${Theme.media.mobile} {
     margin: 0 0 8vh 0;
   }
+  
+  span {
+    margin: 0 4px;
+    position: absolute;
+    left: 32%;
+    top: -70%;
+  }
+`
+
+const LanguageEn = styled.button<LanguagePropsType>`
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  color: ${(props) =>
+          props.activeEn ? `${Theme.colors.primaryFont}` : `${Theme.colors.secondaryFont}`};
+  font-weight: ${(props) =>
+          props.activeEn ? 700 : 400};
+`
+
+const LanguageRu = styled.button<LanguagePropsType>`
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  color: ${(props) =>
+    props.activeRu ? `${Theme.colors.primaryFont}` : `${Theme.colors.secondaryFont}`};
+  font-weight: ${(props) =>
+    props.activeRu ? 700 : 400};
 `
 
 const Name = styled.h2`
@@ -108,7 +139,9 @@ export const S ={
     Wrapper,
     Main,
     Photo,
-    Language,
+    LanguageEn,
+    LanguageRu,
     TextContainer,
-    Name
+    Name,
+    ButtonContainer
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import {Icon} from "../../components/icon/Icon";
 import {Container} from "../../components/Container";
 import {S} from './Footer_Styled'
+import {useTranslation} from "react-i18next";
 
 const socialData = [
     {
@@ -22,6 +23,9 @@ const socialData = [
 ]
 
 export const Footer: React.FC = () => {
+
+    const { t } = useTranslation();
+
     return (
         <S.Footer>
             <Container>
@@ -36,7 +40,7 @@ export const Footer: React.FC = () => {
                         )
                     })}
                 </S.SocialList>
-                <S.Copyright> © 2023 Dmitriy Voronovich<br/> All Rights Reserved.</S.Copyright>
+                <S.Copyright> © 2023 {t("name")} {t("surname")}<br/> {t("footer")}</S.Copyright>
             </Container>
         </S.Footer>
     );

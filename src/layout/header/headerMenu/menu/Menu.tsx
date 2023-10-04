@@ -1,30 +1,31 @@
-import React, {Dispatch, SetStateAction} from 'react';
+import React from 'react';
 import {S} from '../HeaderMenu_Styles'
+import {useTranslation} from "react-i18next";
 
 const menu = [
     {
-        title: 'Home',
+        title: "home",
         href: 'home',
         offset: 10
     },
     {
-        title: 'About me',
+        title: "aboutMe",
         href: 'about',
         offset: 10
 
     },
     {
-        title: 'Skills',
+        title: "skills",
         href: 'skills',
-        offset: 10
+        offset: 15
     },
     {
-        title: 'Project',
+        title: "project",
         href: 'project',
-        offset: 10
+        offset: 25
     },
     {
-        title: 'Contacts',
+        title: "contacts",
         href: 'contacts',
         offset: 40
     },
@@ -36,6 +37,8 @@ type MenuPropsType = {
 
 export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
 
+    const { t } = useTranslation();
+
     return (
         <ul>
             {menu.map((item, index) => {
@@ -46,7 +49,7 @@ export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
                                spy={true}
                                offset={item.offset}
                                onClick= {props.onClick}>
-                        {item.title}
+                        {t(item.title)}
                     </S.NavLink>
                 </S.MenuItem>)
             })}

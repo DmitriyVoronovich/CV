@@ -18,7 +18,7 @@ const Contacts = styled.section`
 `
 
 const Text = styled.p`
-  max-width: 40%;
+  max-width: 50%;
   text-align: center;
   font-size: calc((100vw - 360px) / (1445 - 360) * (18 - 16) + 16px);
   font-style: normal;
@@ -68,7 +68,6 @@ const Field = styled.input`
 
   &::placeholder {
     color: ${Theme.colors.secondaryFont};
-    text-transform: capitalize;
   }
 
   &:focus-visible {

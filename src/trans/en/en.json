@@ -1,0 +1,42 @@
+{
+  "home": "Home",
+  "aboutMe": "About me",
+  "skills": "Skills",
+  "project": "Project",
+  "contacts": "Contacts",
+
+  "name": "Dmitriy",
+  "surname": "Voronovich",
+  "devel": "Front-end Developer",
+  "year": "25 years old, Grodno",
+
+  "aboutTitle1": "Let me introduce",
+  "aboutText1": "Hi, I'm Dmitriy – Front-end developer from Grodno. I'm interested in Front-end development and everything connected with it.",
+  "aboutTitle2": "My training",
+  "aboutText2": "I'm completed the course \"Complete course on JavaScript + React - from scratch to result\" on the Udemy platform. Now I'm studying at courses \"Front-end\" in IT-Incubator.",
+  "aboutTitle3": "Ready to work",
+  "aboutText3": "Ready to implement excellent projects with wonderful people.",
+
+  "skillsText": "I have experience with the following technologies:",
+
+  "projectTitle1": "Marvel information portal",
+  "projectText1": "The service allows you to get information about a character from the Marvel universe, as well as a list of comics with this character. Technology stack: React, Redux...",
+  "projectTitle2": "Netflix-clone",
+  "projectText2": "A copy of the hosting into which films from the API service are uploaded. The project has the ability to add and remove films. Technology stack: React, Redux...",
+  "projectTitle3": "Social Network",
+  "projectText3": "A copy of the social network. Technology stack: React, Redux...",
+
+  "popUpText1": "Thanks for your letter.",
+  "popUpText2": "I will answer as soon as possible.",
+  "popUpBtn": "Return",
+
+  "contactText1": "Want to know more or just chat?",
+  "contactText2": "You are welcome!",
+  "contactBtn": "Send message",
+  "contactInputName": "Name",
+  "contactInputEmail": "Email",
+  "contactInputSubject": "Subject",
+  "contactInputMessage": "Message",
+
+  "footer": "All Rights Reserved."
+}
