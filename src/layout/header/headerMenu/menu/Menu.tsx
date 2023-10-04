@@ -11,7 +11,7 @@ const menu = [
     {
         title: "aboutMe",
         href: 'about',
-        offset: 10
+        offset: 15
 
     },
     {
