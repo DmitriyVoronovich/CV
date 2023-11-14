@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/CV/static/css/main.31d6cfe0.css",
-    "main.js": "/CV/static/js/main.f685829b.js",
+    "main.js": "/CV/static/js/main.975a35ff.js",
     "static/js/787.25eaef86.chunk.js": "/CV/static/js/787.25eaef86.chunk.js",
     "static/media/icon-sprite.svg": "/CV/static/media/icon-sprite.caa9eb143cce3b2eba245444abc0c017.svg",
     "static/media/netflix.png": "/CV/static/media/netflix.68eb7d4e6b8288e78323.png",
-    "static/media/heder.webp": "/CV/static/media/heder.8813b4d6177ccb0e9b08.webp",
     "static/media/Marvel.png": "/CV/static/media/Marvel.c3b52c6f1772327d766c.png",
-    "static/media/Rectangle14.png": "/CV/static/media/Rectangle14.8a6d75e35f13fa3419fa.png",
+    "static/media/social_network.webp": "/CV/static/media/social_network.c045cb13b9fed5a5cc90.webp",
+    "static/media/todolist.png": "/CV/static/media/todolist.0bd467150177ccfd7b8f.png",
     "index.html": "/CV/index.html",
-    "main.f685829b.js.map": "/CV/static/js/main.f685829b.js.map",
+    "main.975a35ff.js.map": "/CV/static/js/main.975a35ff.js.map",
     "787.25eaef86.chunk.js.map": "/CV/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.f685829b.js"
+    "static/js/main.975a35ff.js"
   ]
 }
