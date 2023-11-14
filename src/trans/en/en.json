@@ -24,7 +24,9 @@
   "projectTitle2": "Netflix-clone",
   "projectText2": "A copy of the hosting into which films from the API service are uploaded. The project has the ability to add and remove films. Technology stack: React, Redux...",
   "projectTitle3": "Social Network",
-  "projectText3": "A copy of the social network. Technology stack: React, Redux...",
+  "projectText3": "A copy of the social network. The project is in the process of being written.",
+  "projectTitle4": "Todolist",
+  "projectText4": "Similar to Trello. Allows you to create a list of tasks. The project is in the process of being written.",
 
   "popUpText1": "Thanks for your letter.",
   "popUpText2": "I will answer as soon as possible.",

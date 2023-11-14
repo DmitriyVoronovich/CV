@@ -3,8 +3,9 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import netflix from '../../../assets/images/netflix.png'
-import social from '../../../assets/images/Rectangle14.png'
+import social from '../../../assets/images/social_network.webp'
 import marvel from '../../../assets/images/Marvel.png'
+import todolist from '../../../assets/images/todolist.png'
 import {Container} from "../../../components/Container";
 import {S} from './Works_Styled'
 import {useTranslation} from "react-i18next";
@@ -30,6 +31,13 @@ const worksData = [
         href: 'https://github.com/DmitriyVoronovich/Social-network',
         homePage: 'https://github.com/DmitriyVoronovich/Social-network',
         text: "projectText3"
+    },
+    {
+        title: "projectTitle4",
+        src: todolist,
+        href: 'https://github.com/DmitriyVoronovich/Todolist',
+        homePage: 'https://github.com/DmitriyVoronovich/Todolist',
+        text: "projectText4"
     }
 ]
 

@@ -57,7 +57,7 @@ export const Main: React.FC = () => {
                             <S.LanguageEn onClick={handleLenguageChangeEn} activeEn={activeEn}>ENG</S.LanguageEn>
                         </S.ButtonContainer>
                     </S.Text>
-                    <S.Photo src={photo} alt='developer foto'/>
+                    {/*<S.Photo src={photo} alt='developer foto'/>*/}
                 </FlexWrapper>
             </Container>
         </S.Main>
